@@ -1,0 +1,46 @@
+
+.corpo{
+    height: 100vh;
+    overflow: auto; 
+    place-items:center;
+}
+
+.list-medicamentos{
+    h2{
+        padding-left: 20px;
+    }
+}
+.medicamento-x{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    }
+    h3{
+        background-color: antiquewhite;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    p{
+        padding-left: 20px;
+        padding-bottom: 10px;
+
+    }
+    .bt{
+        width: 100%;
+        .bt-paciente{
+            font-size: small;
+            height: 40px;
+            max-width: 600px;
+            color: aliceblue;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        #solicitar{
+            background-color: darkgreen;
+        }
+        #informar{
+            background-color: brown;
+        }
+} 

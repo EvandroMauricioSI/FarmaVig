@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;    
+    height: 100vh;
+    background-color: #e3e1e1;
+
+}
+.cabeçalho{
+    position: sticky;
+    top: 0; /* Define a distância do topo da viewport */
+    background-color: white; /* Opcional: define uma cor de fundo */
+    z-index: 100; /* Opcional: garante que o cabeçalho fique acima de outros elementos */
+    height: 30px;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.corpo{
+    background-color: #f1f1f1;
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    max-width: 90%;
+    justify-content: center;
+    .title{
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+        }
+        hr{
+            width: 60%;
+            max-width: 600px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
+button{
+    margin: auto;
+    border-style: none;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
