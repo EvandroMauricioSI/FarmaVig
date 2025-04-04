@@ -1,3 +1,12 @@
+.title{
+    display: block;
+    img{
+        display: block;
+        margin: auto;
+        width: 200px;
+    }
+}
+
 .box-opt {
     display: flex;
     flex-direction: column; /* Organiza os botões em coluna */

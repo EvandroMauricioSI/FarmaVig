@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeitos Colaterais</title>
+    <link rel="stylesheet" href="/frontend/src/styles.css">
+    <link rel="stylesheet" href="./efeitos-colaterais.component.css">
+    
+</head>
+
+<body>
+  <div class="cabeçalho">
+    <img src="assets/logofarmaco.png" alt="logo">
+  </div>
+
+  <div class="corpo">
+   
+    <div class="container">
+      <h2>Relatar Efeitos Colaterais</h2>
+      <form [formGroup]="efeitosForm" (ngSubmit)="onSubmit()">
+        
+        <!-- Nome do Medicamento -->
+        <div>
+          <label for="nomeMedicamento">Nome do Medicamento</label>
+          <input id="nomeMedicamento" type="text" formControlName="nomeMedicamento" readonly />
+        </div>
+    
+        <!-- Quantidade de Doses Tomadas -->
+        <div>
+          <label for="doses">Quantas doses foram tomadas?</label>
+          <input id="doses" type="number" formControlName="doses" min="1" />
+        </div>
+    
+        <!-- Sintomas -->
+        <div>
+          <label>Sintomas apresentados:</label>
+          <div *ngFor="let sintoma of sintomas">
+            <input type="checkbox" [value]="sintoma" (change)="selecionarSintoma($event)" />
+            {{ sintoma }}
+          </div>
+        </div>
+    
+        <!-- Outros sintomas -->
+        <div *ngIf="outrosSelecionado">
+          <label for="outros">Descreva outros sintomas:</label>
+          <textarea id="outros" formControlName="outros"></textarea>
+        </div>
+    
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    
+    
+    
+    
+
+  
+  
+  
+  </div> <!--Fechamendo da class="corpo"-->
+
+
+</body>
+</html>

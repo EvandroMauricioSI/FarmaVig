@@ -4,29 +4,38 @@
 body {
     margin: 0;    
     height: 100vh;
-    background-color: #e3e1e1;
+    /*background-image: url(assets/wallpaper1.jpg);*/
+    background-color: #333;
 
 }
 .cabeçalho{
     position: sticky;
     top: 0; /* Define a distância do topo da viewport */
-    background-color: white; /* Opcional: define uma cor de fundo */
+    background-color: rgb(255, 255, 255); /* Opcional: define uma cor de fundo */
     z-index: 100; /* Opcional: garante que o cabeçalho fique acima de outros elementos */
-    height: 30px;
+    height: 40px;
     overflow: hidden;
     width: 90%;
+    max-width: 900px;
     margin: auto;
     justify-content: center;
+    img{
+        height: 40px;
+    }
 
 }
 
 .corpo{
-    background-color: #f1f1f1;
+    padding-top: 15px;
+    background-color: white;
     margin: auto;
     width: 90%;
     height: 100%;
     max-width: 90%;
+    max-width: 900px;
     justify-content: center;
+    
+    
     .title{
         h1{
             text-align: center;
