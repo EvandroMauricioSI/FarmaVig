@@ -1,0 +1,55 @@
+1. Pré-requisitos
+Certifique-se de ter instalado:
+
+Node.js (https://nodejs.org/)
+
+MongoDB (https://www.mongodb.com/try/download/community)
+(ou use MongoDB Atlas se preferir online)
+
+2. Abra a pasta farmavig no VS Code.
+
+
+==============================================
+3. Rodar o BACKEND (API com Node.js + Express)
+==============================================
+
+Acesse a pasta backend:
+    cd farmavig/backend
+
+Instale as dependências:
+    npm install
+
+Configure o banco de dados
+No arquivo .env (na raiz do projeto), já está definido:
+    MONGO_URI=mongodb://localhost:27017/farmavig
+    JWT_SECRET=segredo123
+
+Inicie o servidor:
+    node server.js
+
+    Deve aparecer: Servidor rodando na porta 5000
+
+
+==============================================
+4. Rodar o FRONTREND (React)
+==============================================
+Em outro terminal, acesse:
+    cd farmavig/frontend
+
+Instale as dependências:
+    npm install
+
+Inicie o frontend:
+    npm start
+
+
+
+5. Testar Login
+Como ainda não há cadastro, você pode inserir manualmente um usuário no MongoDB ou pedir para eu gerar um script com um "usuário de teste" no backend.
+
+Próximos passos recomendados:
+Criar a tela de cadastro de usuário
+
+Redirecionar o login para /medico, /paciente ou /farmaceutico
+
+Proteger rotas com autenticação (token JWT)

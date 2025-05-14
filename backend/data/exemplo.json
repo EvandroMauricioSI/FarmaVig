@@ -1,0 +1,18 @@
+[
+    {
+      "nome": "Dr. João Silva",
+      "especialidade": "Cardiologia",
+      "crm": "12345"
+    },
+    {
+      "nome": "Maria Oliveira",
+      "data_nascimento": "1990-05-10",
+      "medicamentos": ["Aspirina", "Paracetamol"]
+    },
+    {
+      "nome": "José Santos",
+      "especialidade": "Endocrinologia",
+      "crm": "67890"
+    }
+  ]
+
