@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import Login from './Login';
-import Medicos from './Medicos';
-import Pacientes from './Pacientes';
-import Farmaceuticos from './Farmaceuticos';
+import Login from '../pages/Login/Login';
+import Medicos from '../pages/Medicos/Medicos';
+import Pacientes from '../pages/Pacientes/Pacientes';
+import Farmaceuticos from '../pages/Farmaceuticos/Farmaceuticos';
 
 function App() {
   useEffect(() => {

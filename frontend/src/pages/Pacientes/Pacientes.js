@@ -1,5 +1,5 @@
 import React from 'react';
-import './Paciente.component.css'; // Or paciente.css if renamed
+import './Paciente.css'; // Or paciente.css if renamed
 
 
 function Paciente() {

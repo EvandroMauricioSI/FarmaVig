@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import '../../App/App.css';
 
 function Farmaceuticos() {
   const [farmaceuticos, setFarmaceuticos] = useState([]);

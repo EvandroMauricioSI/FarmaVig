@@ -9,8 +9,6 @@ function Login({ userType }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simular login bem-sucedido (sem backend por enquanto)
-    // Redirecionar para a página correspondente ao tipo de usuário
     navigate(`/${userType.toLowerCase()}`);
   };
 

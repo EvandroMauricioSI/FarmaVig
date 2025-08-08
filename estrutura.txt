@@ -1,0 +1,61 @@
+FARMAVIG
+	⋁ backend
+		⋁ controllers
+			userControllers.js
+		⋁ data
+			exemplo.js
+		⋁ models
+			Farmaceutico.js
+			Medico.js
+			Paciente.js
+			User.js
+		﹥ node_modules
+		﹥ routes
+		.env
+		app.js
+		criarUsuario.js
+		package-lock.json
+		package.json
+		server.json
+
+	⋁ frontend
+		﹥ node_modules
+		⋁ public
+			favicon.ico
+			index.html
+			logo.png
+			logo.svg
+			logo192.png
+			logo512.png
+			manifest.json
+			perfil.png
+			robots.txt
+		⋁ src
+			⋁ App
+				App.css
+				App.js
+				App.test.js
+			⋁ pages
+				⋁ Farmaceuticos
+					Farmaceuticos.js
+				⋁ Login
+					Login.css
+					Login.js
+				⋁ Medicos
+					Medicos.css
+					Medicos.js
+				⋁ Pacientes
+					Pacientes.css
+					Paciente.js
+			⋁ setup
+			index.css
+			index.json
+		.gitignore
+		package-lock.json
+		package.json
+		README.md
+	
+	.gitignore
+	LICENCE
+	README.md
+	rodar.txt
