@@ -13,8 +13,9 @@ function Login({ userType }) {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container" lang='pt-BR'>
       <h2>Login | {userType}</h2>
+
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
@@ -37,7 +38,14 @@ function Login({ userType }) {
           />
         </div>
         <button type="submit">Entrar</button>
+
+        
       </form>
+      {/* Botão de Voltar */}
+      <button  type="button" className="back-button" onClick={() => navigate(-1)}>
+        <img src="/button_back_blue.png" alt="botão voltar" className="back-button-img" />
+        <h3 className='h3'>VOLTAR</h3>
+      </button>
     </div>
   );
 }

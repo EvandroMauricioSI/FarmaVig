@@ -19,11 +19,12 @@
   color: #555;
 }
 .form-group input {
+  height:10px;
   width: 70vw;
   max-width: 350px;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 16px;
 }
 button[type="submit"] {
@@ -34,7 +35,7 @@ button[type="submit"] {
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 16px;
   font-weight: bolder;
   cursor: pointer;
@@ -42,4 +43,23 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #004691;
 }
-  
+
+.back-button {
+  margin-top: 100px;
+  width: 40vw;
+  max-width: 400px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 0.8rem;
+  cursor: pointer;
+  .back-button-img{
+    width: 30px;
+    height: 30px;
+  }
+  .h3{
+    font-size: 0.7rem;
+  }
+}

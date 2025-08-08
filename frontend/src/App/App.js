@@ -15,8 +15,11 @@ function App() {
     <Router>
       <div className="App">
         <div className="cabecalho">
-          <img src="/logo.png" alt="FarmaVig Logo" className="logo" />
-          <h3> FarmaVig </h3>
+          <div className='logo'>
+            <img src="/logo.png" alt="FarmaVig Logo" className="icon_logo" />
+            <h3 className="h3"> FarmaVig </h3>
+          </div>
+        
         </div>
         
         <Routes>
