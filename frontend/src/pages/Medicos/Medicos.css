@@ -1,11 +1,22 @@
 .menu-container {
-  max-width: 800px;
+  max-width: 850px;
   margin: 40px auto;
   padding: 20px;
-  border: 2px solid #007bff;
-  border-radius: 10px;
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
+}
+
+/* Layout responsivo: uma coluna no celular, duas no desktop */
+.menu-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .menu-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .menu-header {
@@ -24,13 +35,40 @@
   color: #555;
 }
 
+/* Cada grupo agora tem uma borda e sombra individual */
+.menu-group {
+  background-color: white;
+  border: 1px solid #007bff23;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-group:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Título de cada grupo */
+.menu-group-title {
+  background-color: white;
+  color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
 .menu-list ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .menu-list li {
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
 .menu-button {
@@ -48,6 +86,6 @@
 
 .menu-button:hover {
   background-color: #007bff;
-  color: #fff;
+  color: white;
   transform: scale(1.02);
 }
