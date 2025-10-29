@@ -4,28 +4,30 @@
   width: 100vw;
 }
 
-.cabecalho{
+.header{
+  background-color: #009cff;
   width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
-  background-color:rgb(237, 245, 250);
-  height: 50px;
+  height: 60px;
+  border-bottom: #004691;
   .logo {
-    margin-top: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
     padding-left: 20px;
     width: auto;
     height: 50px;
-    display: flex; /* Alinha img e h3 lado a lado */
-    align-items: center;
+    display: flex; /* Alinha icon_logo e h3 lado a lado */
+    align-items: center; /*Centraliza verticalmente icon_logo e h3*/
     gap: 10px; /* Espaçamento entre a img e o h3 (ajuste conforme necessário) */
     .icon_logo {
       width: 50px;
       height: 50px;
     }
     .h3{
-      color: rgb(18, 175, 0);
+      color: rgb(255, 255, 255);
       margin-top: 15px;
     }
   }
@@ -41,17 +43,23 @@
 }
 
 .botoes button {
+  
   width: 70vw;
-  max-width: 400px;
+  max-width: 300px;
   padding: 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 20px;
+  background-color: #a8c9b33d;
+  color: #00A335;
+  border-color: #00A335;
+  border-style:initial;
+
+  border-radius: 10px;
   font-size: 16px;
+  font-weight: 900;
   cursor: pointer;
 }
 
 .botoes button:hover {
-  background-color:#004691;
+  font-weight: bolder;
+  background-color: #00A335;
+  color: #ffffff;
 }

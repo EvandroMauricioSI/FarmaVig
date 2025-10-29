@@ -5,6 +5,7 @@ import Login from '../pages/Login/Login';
 import Medicos from '../pages/Medicos/Medicos';
 import Pacientes from '../pages/Pacientes/Pacientes';
 import Farmaceuticos from '../pages/Farmaceuticos/Farmaceuticos';
+import EfeitosColaterais from '../pages/Pacientes/EfeitosColaterais';
 
 function App() {
   useEffect(() => {
@@ -14,9 +15,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="cabecalho">
+        <div className="header">
           <div className='logo'>
-            <img src="/logo.png" alt="FarmaVig Logo" className="icon_logo" />
+            <img src="/logo-farmavig-branco.png" alt="FarmaVig Logo" className="icon_logo" />
             <h3 className="h3"> FarmaVig </h3>
           </div>
         
@@ -30,28 +31,29 @@ function App() {
 
                 <h2>Logar como:</h2>
 
-                <Link to="/login/pacientes">
+                <Link to="/Login/Pacientes">
                   <button>Paciente</button>
                 </Link>
                 <br />
 
-                <Link to="/login/medicos">
+                <Link to="/Login/Medicos">
                   <button>Médico</button>
                 </Link>
                 <br />
 
-                <Link to="/login/farmaceuticos">
+                <Link to="/Login/Farmaceuticos">
                   <button>Farmacêutico</button>
                 </Link>
               </div>
             }
           />
-          <Route path="/login/medicos" element={<Login userType="Médicos" />} />
+          <Route path="/login/medicos" element={<Login userType="Medicos" />} />
           <Route path="/login/pacientes" element={<Login userType="Pacientes" />} />
-          <Route path="/login/farmaceuticos" element={<Login userType="Farmacêuticos" />} />
-          <Route path="/medicos" element={<Medicos />} />
-          <Route path="/pacientes" element={<Pacientes />} />
-          <Route path="/farmaceuticos" element={<Farmaceuticos />} />
+          <Route path="/login/farmaceuticos" element={<Login userType="Farmaceuticos" />} />
+          <Route path="/Medicos" element={<Medicos />} />
+          <Route path="/Pacientes" element={<Pacientes />} />
+          <Route path="/Farmaceuticos" element={<Farmaceuticos />} />
+          <Route path="/efeitos-colaterais" element={<EfeitosColaterais />} />
         </Routes>
       </div>
     </Router>

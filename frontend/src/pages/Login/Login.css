@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .login-container h2 {
-  color: #007bff;
+  color: #00A335;
 }
 .form-group {
   margin-bottom: 5px;
@@ -20,8 +20,8 @@
 }
 .form-group input {
   height:10px;
-  width: 70vw;
-  max-width: 350px;
+  width: 60vw;
+  max-width: 400px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -29,11 +29,11 @@
 }
 button[type="submit"] {
   margin-top: 40px;
-  width: 70vw;
+  width: 60vw;
   max-width: 400px;
   padding: 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #a8c9b33d;
+  color: #00A335;
   border: none;
   border-radius: 10px;
   font-size: 16px;
@@ -41,18 +41,20 @@ button[type="submit"] {
   cursor: pointer;
 }
 button[type="submit"]:hover {
-  background-color: #004691;
+  background-color: #00A335;
+  color: white;
 }
 
 .back-button {
   margin-top: 100px;
   width: 40vw;
-  max-width: 400px;
+  max-width: 100px;
   padding: 10px;
   border: none;
   border-radius: 10px;
   background-color: transparent;
-  color: rgb(0, 0, 0);
+  
+
   font-size: 0.8rem;
   cursor: pointer;
   .back-button-img{

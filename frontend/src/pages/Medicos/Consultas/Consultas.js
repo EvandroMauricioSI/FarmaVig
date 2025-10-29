@@ -14,8 +14,8 @@ function Medicos() {
   }, []);
 
   const opcoesMenu = [
-    { nome: 'Consultas agendadas para hoje', rota: './consultas' },
-    { nome: 'Agenda de Teleconsultas', rota: './teleconsultas' },
+    { nome: 'Consultas | Presenciais', rota: '' },
+    { nome: 'Consultas | Teleconsultas', rota: '/teleconsultas' },
     { nome: 'Multi-agenda dos médicos', rota: '/multi-agenda' },
     { nome: 'Cadastro geral dos pacientes', rota: '/cadastro-pacientes' },
     { nome: 'Histórico completo de cada paciente', rota: '/historico-paciente' },
@@ -53,7 +53,7 @@ function Medicos() {
                 className="menu-button"
                 onClick={() => handleNavegar(item.rota)}
               >
-                {item.nome}
+                {index + 1} - {item.nome}
               </button>
             </li>
           ))}

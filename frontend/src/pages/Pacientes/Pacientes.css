@@ -1,0 +1,165 @@
+/* GERAL */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f7;
+}
+
+.paciente-container {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* CABEÇALHO */
+.paciente-header {
+  background-color: #009cff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo h1 {
+  font-size: 1.3rem;
+  text-transform: lowercase;
+}
+
+.logo span {
+  font-weight: 300;
+  font-size: 0.9rem;
+  display: block;
+}
+
+/* CARTÃO DO PACIENTE */
+.paciente-card {
+  background: #fff;
+  margin: 15px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  height: 100px;
+}
+
+.paciente-info {
+  flex: 1;
+}
+
+.saudacao {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.paciente-label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.paciente-plano {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.paciente-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #00b3ff;
+}
+
+/* LISTA DE MEDICAMENTOS */
+.paciente-opcoes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  padding: 10px 15px 80px; /* espaço para a barra inferior */
+}
+
+.opcao-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.opcao-card:hover {
+  transform: translateY(-3px);
+}
+
+.opcao-card h3 {
+  margin-bottom: 5px;
+  color: #009cff;
+}
+
+.opcao-card p {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.botoes button {
+  flex: 1;
+  margin: 0 5px;
+  background-color: #009cff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+    .bt-efeitos-colaterais{
+      background-color: red;}
+}
+
+.botoes button:hover {
+  background-color: #007acc;
+}
+
+
+
+/* BARRA INFERIOR */
+.paciente-nav {
+  background-color: #0b1a2a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 0;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+
+}
+
+.nav-item {
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+.nav-item.active {
+  background-color: #009cff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  opacity: 1;
+}
+
+
